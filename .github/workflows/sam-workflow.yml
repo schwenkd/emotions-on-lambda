@@ -16,4 +16,4 @@ jobs:
           aws-region: us-east-1
       - run: pip install -r requirements.txt
       - run: sam build
-      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name face-sentiment
+      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name derek-sentiment
