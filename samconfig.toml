@@ -2,10 +2,11 @@ version = 0.1
 [default]
 [default.deploy]
 [default.deploy.parameters]
-stack_name = "derek-sentiment"
+stack_name = "ds2-sentiment"
 s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-pcatkpeq1n2w"
-s3_prefix = "face-sentiment"
+s3_prefix = "ds2-sentiment"
 region = "us-east-1"
 capabilities = "CAPABILITY_IAM"
-image_repositories = ["FaceSentimentFunction=681261969843.dkr.ecr.us-east-1.amazonaws.com/facesentiment02552640/facesentimentfunctionb509da23repo"]
+image_repositories = ["DS2SentimentFunction=681261969843.dkr.ecr.us-east-1.amazonaws.com/ds2sentiment73cef5ec/ds2sentimentfunction492f1e79repo"]
 disable_rollback = true
+confirm_changeset = true
